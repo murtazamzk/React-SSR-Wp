@@ -1,7 +1,4 @@
-# Server Side Rendered / Code Split React + Wordpress REST API - built by Keen (WIP)
-This repo provides a boilerplate for pairing the WP Rest API with a server-side rendered and code split React client, built by [Keen](https://keen-studio.com).
-
-Wordpress, MySQL, PHP and PHPMyAdmin are all provided by Docker which makes it easy to spin up new instances of WP sites both for local development and for production on hosts like DigitalOcean.
+# Server Side Rendered / Code Split React + Wordpress REST API 
 
 ## Getting Started
 Clone this repository locally and `cd` to the `client` folder and type `npm install`.
@@ -47,7 +44,7 @@ At this point, you can get to work. For a development workflow, we've included `
 
 ## Sass
 
-This repo comes preconfigured to support Sass.  As you can see, at Keen, we generally split out components to include their own Sass files - but you can structure your project however you'd like.
+This repo comes preconfigured to support Sass.
 
 ## Caching API responses on the server side
 
@@ -55,7 +52,7 @@ We use Redux both on the server and the client to cache the site content provide
 
 ## Template Usage
 
-Keen relies on Wordpress page templates to assign ACF custom fields to pages as needed.  For example, a Homepage will generally require different custom fields than a typical About page.  By creating empty templates in the `/api/wp-content/themes/rest-api` folder, we can assign them to pages we create within Wordpress.  We then can write ACF logic to apply custom field groups to pages that use specific page templates, and then we can mirror the same template structure on the client side, but built with React components.
+Repo relies on Wordpress page templates to assign ACF custom fields to pages as needed.  For example, a Homepage will generally require different custom fields than a typical About page.  By creating empty templates in the `/api/wp-content/themes/rest-api` folder, we can assign them to pages we create within Wordpress.  We then can write ACF logic to apply custom field groups to pages that use specific page templates, and then we can mirror the same template structure on the client side, but built with React components.
 
 ## Credits
 
@@ -64,10 +61,7 @@ To build this repo, we've relied heavily on a few very helpful Medium posts from
 https://medium.com/bucharestjs/upgrading-a-create-react-app-project-to-a-ssr-code-splitting-setup-9da57df2040a
 https://medium.com/bucharestjs/adding-state-management-with-redux-in-a-cra-srr-project-9798d74dbb3b
 
-Also, we've taken inspiration from Postlight's Next.JS + Wordpress setup:
+Inspiration from Postlight's Next.JS + Wordpress setup:
 
 https://github.com/postlight/headless-wp-starter
 
-## Questions?
-
-[Email us](mailto:info@keen-studio.com) or drop by our website at [keen-studio.com](https://keen-studio.com) and say hi through our live chat + live webcam.
