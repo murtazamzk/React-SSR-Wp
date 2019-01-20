@@ -1,0 +1,36 @@
+{
+  "Services": {
+    "ex_wp": {
+      "Image": "wordpress@sha256:13e2b0e804fbe5250f3b8e0bfb2c2252d215c1da780ac2bf43b7797c0806b50c",
+      "Networks": [],
+      "Ports": [
+        {
+          "Port": 80,
+          "Protocol": "tcp"
+        }
+      ]
+    },
+    "ex_wp_db": {
+      "Env": [
+        "MYSQL_ROOT_PASSWORD=examplepass"
+      ],
+      "Image": "mariadb@sha256:46345ab06961cf29aa340788f71cb0509420de65a7359039b4ef6599d937bae9",
+      "Networks": []
+    },
+    "phpmyadmin": {
+      "Env": [
+        "MYSQL_USERNAME=root",
+        "MYSQL_ROOT_PASSWORD=examplepass"
+      ],
+      "Image": "corbinu/docker-phpmyadmin@sha256:8ba64f73a8f28f62c00c9515171361b9d5f7a0c6f6fa0aa4418839f9974d098d",
+      "Networks": [],
+      "Ports": [
+        {
+          "Port": 80,
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "Version": "0.1"
+}
